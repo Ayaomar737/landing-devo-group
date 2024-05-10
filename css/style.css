@@ -1,0 +1,270 @@
+:root{
+  --second-color: #5E95CF;
+  --main-color: #F29223;
+  --gray-color: #5c727d;
+  --black-color: #222222;
+  --dark-blue: #01539F;
+}
+@font-face {
+  font-family: cairo;
+  src: url(../webfonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+}
+body{
+  font-family: cairo;
+  scroll-behavior: smooth;
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+}
+.bg-body{
+background-image: url(../image/row-bgimage-2.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+}
+p{
+  text-align: justify;
+}
+.color-black{
+  color: var(--black-color);
+}
+.color-gray{
+  color: var(--gray-color);
+}
+.color-blue{
+  color: var(--second-color);
+}
+.color-orange{
+  color: var(--main-color);
+}
+.logo img{
+  height: 70px;
+}
+.main-heading h1{
+  max-width: 490px;
+}
+.scroller{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--main-color);
+  z-index: 999999;
+  height: 5px;
+  width: 0px;
+}
+
+.about-img img{
+  border-radius: 10px;
+  height: 500px;
+}
+/* main button */
+.main-btn a{
+  color: white !important;
+  background-color: var(--second-color);
+  padding: 12px 35px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  font-weight: 600;
+}
+.main-btn a:hover{
+  background-color: var(--main-color);
+}
+
+/* start landing */
+.landing{
+  min-height: 600px;
+}
+.landing img{
+  height: 600px;
+  object-fit: cover;
+  position: relative;
+}
+.landing .heading{
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 100px;
+  /* letter-spacing: 2px; */
+}
+.carousel-caption{
+  right: 5%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 500px;
+}
+.carousel-item{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background-color:  var(--main-color);
+}
+.landing .owl-dots{
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+@media (max-width: 992px) {
+.landing .heading{
+  font-size: 70px;
+}
+}
+@media (max-width: 876px) {
+.landing .heading{
+  font-size: 60px;
+}
+}
+@media (max-width: 700px) {
+.landing .heading{
+  font-size: 50px;
+}
+}
+@media (max-width: 600px) {
+.landing .heading{
+  font-size: 40px;
+}
+}
+@media (max-width: 492px) {
+.landing .heading{
+  font-size: 40px;
+  line-height: 70px;
+}
+}
+@media (max-width: 492px) {
+.landing .heading{
+  font-size: 40px;
+  line-height: 70px;
+}
+}
+@media (max-width: 376px) {
+.landing .heading{
+  line-height: 55px;
+}
+}
+/* end landing */
+
+/* start services */
+.services .icon img{
+  height: 80px;
+}
+
+/* end services */
+
+/* start client */
+
+.our-client{
+  background-image: url(../image/row-bgimage-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-client{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.image-client img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--second-color);
+}
+.card-client .information p{
+  margin: 10px 40px;
+  max-width: 500px;
+}
+.card-client .information span{
+  color: var(--second-color);
+}
+
+/* end client */
+
+/* start contact */
+.text-contact{
+  text-align: right;
+}
+.form-contact{
+  /* background: rgba(3,3,3,.5); */
+  margin: 0 auto;
+  padding: 60px 40px 50px;
+}
+.edit-input{
+  background: transparent;
+  border: 1px solid #8a8a8a;
+  /* color: #fff; */
+  font-size: 20px;
+  font-weight: 400;
+  height: 60px;
+  line-height: 25px;
+  padding: 15px;
+}
+.edit-input:focus{
+  border: 1px solid var(--second-color);
+  outline: none;
+}
+.form-contact textarea{
+  height: 200px;
+}
+.btn{
+  background-color: transparent;
+  border: none;
+}
+.contact{
+  padding-bottom: 0 !important;
+}
+.text-hover{
+  color: var(--second-color);
+  transition: all 0.5s ease;
+}
+.text-hover:hover{
+  color: var(--main-color);
+}
+.copyright{
+  padding: 30px 0;
+  border-top: 1px solid #b8b6b2;
+}
+.social-link ul li a{
+  background-color: var(--second-color);
+  color: white;
+  display: block;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+.social-link ul li a:hover{
+  background-color: var(--main-color);
+}
+/* finish contact */
+
+
+.content-about ul li{
+  color: var(--gray-color);
+  margin-bottom: 10px;
+  padding-right: 25px;
+  position: relative;
+}
+.content-about ul li::before{
+  content: "";
+  position: absolute;
+  background: var(--second-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  right: 0;
+  top: 10px;
+  
+}
