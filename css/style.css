@@ -268,3 +268,59 @@ p{
   top: 10px;
   
 }
+
+
+/* *************************edit 31/5/2024 ******************* */
+.btn-faq{
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.faq-card{
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.btn-faq:hover{
+  color: var(--main-color);
+}
+.active .faq-icon{
+  transform: rotate(180deg);
+  transition: 0.5 ease;
+}
+.collapse {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+
+.card-offer1{
+  background-color: var(--second-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-offer1:hover .image-offer img{
+  transform: scale(1.1);
+}
+.image-offer img{
+  width: 300px;
+  height: 300px;
+  margin-bottom: -25px;
+  transition: 0.5s ease;
+}
+.offer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+.card-offer2{
+  background-color: var(--main-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-offer2:hover .image-offer img{
+  transform: scale(1.1);
+}

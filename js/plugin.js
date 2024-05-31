@@ -27,5 +27,9 @@ $(".client .owl-carousel").owlCarousel({
     dots: true,
 });
 
+$('.btn-faq').click(function(){
+    $(this).toggleClass('active');
+});
+
 
 });
